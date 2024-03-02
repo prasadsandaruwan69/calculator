@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="contaner">
+
+    
+    <div class="calculator">
+        <form >
+              <div class="disply"> <input type="text" name="disply">
+              </div>            
+              <div>
+
+                <input type="button" value="AC" onclick="disply.value =``" class="operator">
+                <input type="button" value="CE" onclick="disply.value =disply.value.toString().slice(0,-1)"  class="operator">
+                <input type="button" value="." onclick="disply.value +=`.`"  class="operator">
+                <input type="button" value="/" onclick="disply.value +=`/`"  class="operator">
+
+
+              </div>
+              <div>
+
+                <input type="button" value="7" onclick="disply.value +=`7`">
+                <input type="button" value="8" onclick="disply.value +=`8`">
+                <input type="button" value="9" onclick="disply.value +=`9`">
+                <input type="button" value="*" onclick="disply.value +=`*`" class="operator">
+
+
+              </div>
+              <div>
+
+                <input type="button" value="4"onclick="disply.value +=`4`">
+                <input type="button" value="5" onclick="disply.value +=`5`">
+                <input type="button" value="6" onclick="disply.value +=`6`">
+                <input type="button" value="-" onclick="disply.value +=`-`"  class="operator">
+
+
+              </div>
+              <div>
+
+                <input type="button" value="1"onclick="disply.value +=`1`">
+                <input type="button" value="2"onclick="disply.value +=`2`">
+                <input type="button" value="3"onclick="disply.value +=`3`">
+                <input type="button" value="+"onclick="disply.value +=`+`"  class="operator">
+
+
+              </div>
+              <div>
+
+                <input type="button" value="00"onclick="disply.value +=`00`">
+                <input type="button" value="0" onclick="disply.value +=`0`">
+                <input type="button" value="=" class="qual operator" onclick="disply.value=eval(disply.value)" >
+                
+
+
+              </div>
+        </form>
+    </div>
+</div>  
+</body>
+</html>
